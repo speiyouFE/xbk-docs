@@ -5,6 +5,8 @@
     <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
 
     <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
+      <!-- <template slot="top">这是顶部插槽</template> -->
+      <!-- <template slot="bottom">这是底部插槽</template> -->
       <slot name="sidebar-top" #top />
       <slot name="sidebar-bottom" #bottom />
     </Sidebar>
@@ -14,6 +16,8 @@
     <Page v-else :sidebar-items="sidebarItems">
       <slot name="page-top" #top />
       <slot name="page-bottom" #bottom />
+      <!-- <template slot="top">这是顶部插槽</template> -->
+      <!-- <template slot="bottom">这是底部插槽</template> -->
     </Page>
   </div>
 </template>
@@ -24,7 +28,7 @@ import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
-
+import '@theme/styles/icon.css'
 export default {
   components: { Home, Page, Sidebar, Navbar },
 

@@ -26,6 +26,17 @@ export default {
     padding 0
     margin 0
     list-style-type none
+    position: relative;
+    z-index: 1;
+    &:after
+      width 1px
+      height 100%
+      background $borderColor
+      position absolute
+      content ''
+      display block
+      right 0
+      top 0
   a
     display inline-block
   .nav-links

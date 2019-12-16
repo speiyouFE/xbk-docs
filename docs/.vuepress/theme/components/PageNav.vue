@@ -2,13 +2,13 @@
   <div class="page-nav" v-if="prev || next">
     <p class="inner">
       <span v-if="prev" class="prev">
-        ←
+        <i class="sealui-icon-chevron-left"></i>
         <router-link v-if="prev" class="prev" :to="prev.path">{{ prev.title || prev.path }}</router-link>
       </span>
 
       <span v-if="next" class="next">
         <router-link v-if="next" :to="next.path">{{ next.title || next.path }}</router-link>
-        →
+        <i class="sealui-icon-chevron-right"></i>
       </span>
     </p>
   </div>
@@ -112,4 +112,9 @@ function flatten(items, res) {
     overflow auto // clear float
   .next
     float right
+  .prev,
+  .next
+    i
+     font-size 1rem
+     color #8c99a5
 </style>

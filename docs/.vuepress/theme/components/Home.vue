@@ -1,5 +1,6 @@
 <template>
   <main class="home" aria-labelledby="main-title">
+    <div class="bg" :style="'background:url(' + bg + ') no-repeat;background-size:cover;background-position: 50%;op'"></div>
     <header class="hero">
       <img v-if="data.heroImage" :src="$withBase(data.heroImage)" :alt="data.heroAlt || 'hero'" />
 
@@ -11,6 +12,10 @@
 
       <p class="action" v-if="data.actionText && data.actionLink">
         <NavLink class="action-button" :item="actionLink" />
+        <NavLink class="action-button" :item="actionLink1" />
+        <NavLink class="action-button" :item="actionLink2" />
+        <NavLink class="action-button" :item="actionLink3" />
+        <NavLink class="action-button" :item="actionLink4" />
       </p>
     </header>
 
@@ -31,10 +36,14 @@
 
 <script>
 import NavLink from '@theme/components/NavLink.vue'
-
+import bg from '@imgs/bg.jpg'
 export default {
   components: { NavLink },
-
+  data() {
+    return {
+      bg
+    }
+  },
   computed: {
     data() {
       return this.$page.frontmatter
@@ -45,19 +54,56 @@ export default {
         link: this.data.actionLink,
         text: this.data.actionText
       }
+    },
+    actionLink1() {
+      return {
+        link: this.data.actionLink1,
+        text: this.data.actionText1
+      }
+    },
+    actionLink2() {
+      return {
+        link: this.data.actionLink2,
+        text: this.data.actionText2
+      }
+    },
+    actionLink3() {
+      return {
+        link: this.data.actionLink3,
+        text: this.data.actionText3
+      }
+    },
+    actionLink4() {
+      return {
+        link: this.data.actionLink4,
+        text: this.data.actionText4
+      }
     }
   }
 }
 </script>
 
 <style lang="stylus">
+.bg
+  width 100%
+  height 100%
+  position: fixed;
+  top 0
+  left 0
+  bottom 0
+  right 0
 .home
+
+  z-index 2
   // padding $navbarHeight 2rem 0
   max-width 100%
   margin 0px auto
   display block
   .hero
     text-align center
+    position relative
+    top 20rem
+    margin-left -30rem
     img
       max-width: 100%
       // max-height 280px
@@ -73,11 +119,12 @@ export default {
       line-height 1.3
       color lighten($--color-black, 40%)
     .action-button
+      margin 0 0 0 1rem
       display inline-block
       font-size 1.2rem
       color #fff
       background-color $--color-primary
-      padding 0.8rem 1.6rem
+      padding 0.5rem 1.2rem
       border-radius 4px
       transition background-color .1s ease
       box-sizing border-box
@@ -87,12 +134,13 @@ export default {
   .features
     border-top 1px solid $borderColor
     padding 1.2rem 0
-    margin-top 2.5rem
+    margin 2.5rem auto 0 auto
     display flex
     flex-wrap wrap
     align-items flex-start
     align-content stretch
     justify-content space-between
+    max-width 80%
   .feature
     flex-grow 1
     flex-basis 30%

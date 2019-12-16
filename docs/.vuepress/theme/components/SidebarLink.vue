@@ -93,19 +93,31 @@ a.sidebar-link
   font-size .85rem
   font-weight 400
   display inline-block
-  color $textColor
-  border-right 0.15rem solid transparent
-  padding 0.25rem 1rem 0.25rem 1.25rem
+  color #5e6d82
+  position: relative;
+  padding 0.45rem 1rem 0.45rem 1.35rem
   line-height 1.4
   width: 100%
   box-sizing: border-box
+  &:after
+    position: absolute;
+    top 0
+    right -1px
+    width 0.25rem
+    height 100%
+    background transparent
+    content ''
+    display block
+    z-index 9
+    // border-right 0.25rem solid transparent
   &:hover
     color $--color-primary
   &.active
     font-weight 600
     color $--color-primary
-    border-right-color $--color-primary
     background #e6f7ff
+    &:after
+      background $--color-primary
   .sidebar-group &
     padding-left 2rem
   .sidebar-sub-headers &

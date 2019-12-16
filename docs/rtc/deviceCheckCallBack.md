@@ -8,6 +8,10 @@
 此方法在 sdk 内部会执行，开发者无需手动执行
 :::
 
+## API 接口
+
+### `this.$rtcApi.deviceCheckCallBack()`
+
 ## 示例代码
 
 ```js
@@ -36,3 +40,5 @@ switch (obj.type) {
     break
 }
 ```
+
+[[toc]]

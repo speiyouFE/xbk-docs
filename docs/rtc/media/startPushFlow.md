@@ -14,7 +14,7 @@ this.$rtcApi.startPushFlow().then(() => {
 })
 ```
 
-:::danger
+::: danger
 在开始调用此 API 前，一定得先调用 [initLocalStream](initLocalStream.html) 进行本地视频初始化
 :::
 [[toc]]

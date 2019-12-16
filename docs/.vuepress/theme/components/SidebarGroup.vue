@@ -57,7 +57,7 @@ export default {
   &:not(.collapsable)
     .sidebar-heading:not(.clickable)
       cursor auto
-      color rgba(69, 90, 100, 0.6)
+      color #999
   // refine styles of nested sidebar groups
   &.is-sub-group
     padding-left 0
@@ -81,7 +81,7 @@ export default {
   color $textColor
   transition color .15s ease
   cursor pointer
-  font-size 1em
+  font-size .9em
   font-weight bold
   // text-transform uppercase
   padding 0.25rem 1.5rem 0.05rem 1.25rem

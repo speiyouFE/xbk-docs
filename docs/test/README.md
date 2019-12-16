@@ -1,42 +1,49 @@
 # 一级标题
 
-[[toc]]
-
 > 说明
 
-:::info
-错误信息
+<Badge :value="12" type="success">
+  <sc-button size="small">评论</sc-button>
+</Badge>
+
+<BadgeTip text="Beta" type="danger"/>
+
+::: tip
+提示信息
 :::
 
-:::tip
-错误信息
+::: info
+一般提示信息
 :::
 
-:::success
-错误信息
+::: success
+成功提示
 :::
 
-:::warning
-错误信息
+::: warning
+警告信息
 :::
-:::danger
+
+::: danger
 错误信息
 :::
 
 ## 二级标题
 
-### 基础用法
+### 三级标题
 
-:::demo 基本使用方法
+#### 四级标题
+
+::: demo 基本使用方法
 
 ```html
 <template>
-  <div>asdasd</div>
+  <Badge :value="12" type="success">
+    <sc-button size="small">评论</sc-button>
+  </Badge>
 </template>
 ```
 
 :::
 
-#### 基础用法
-
-<Badge text="1" />
+[[toc]]
