@@ -11,7 +11,8 @@
     "cname": "echo xbk-docs.sealui.com>>./dist/CNAME",
     "dev": "npm run docs:dev",
     "build": "npm run docs:build && npm run cname",
-    "deploy": "sh ./deploy.sh build"
+    "deploy": "sh ./deploy.sh build",
+    "push": "sh ./deploy.sh push"
   },
   "repository": {
     "type": "git",
