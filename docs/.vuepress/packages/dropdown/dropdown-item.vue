@@ -9,16 +9,16 @@
     :aria-disabled="disabled"
     :tabindex="disabled ? null : -1"
   >
-    <ScIcon :name="icon" v-if="icon" />
+    <!-- <ScIcon :name="icon" v-if="icon" /> -->
     <slot></slot>
   </li>
 </template>
 <script>
 import Emitter from '../mixins/emitter'
-import ScIcon from './icon'
+// import ScIcon from '../icon'
 export default {
   name: 'ScDropdownItem',
-  components: { ScIcon },
+  // components: { ScIcon },
   mixins: [Emitter],
   props: {
     value: {},

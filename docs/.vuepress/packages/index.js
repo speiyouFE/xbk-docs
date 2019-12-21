@@ -6,7 +6,7 @@ import Dialog from './dialog/index.js'
 import Tabs from './tabs/index.js'
 import TabPane from './tab-pane/index.js'
 import Input from './input/index.js'
-import Icon from './icon/index.js'
+// import Icon from './icon/index.js'
 import Select from './select/index.js'
 import Option from './select/option.js'
 import OptionGroup from './select/option-group.js'
@@ -19,7 +19,7 @@ import Countup from './countup/index.js'
 import Countdown from './countdown/index.js'
 import QrCode from './qrcode/index.js'
 
-const components = [Card, Button, Dialog, Tabs, TabPane, Input, Icon, Select, Option, OptionGroup, Scrollbar, Lottie, Dropdown, DropdownMenu, DropdownItem, Popover, Countup, Countdown, QrCode]
+const components = [Card, Button, Dialog, Tabs, TabPane, Input, Select, Option, OptionGroup, Scrollbar, Lottie, Dropdown, DropdownMenu, DropdownItem, Popover, Countup, Countdown, QrCode]
 const version = '1.0.1'
 const install = function(Vue, opts = {}) {
   components.forEach(component => {
@@ -45,7 +45,6 @@ export default {
   Tabs,
   TabPane,
   Input,
-  Icon,
   Select,
   Option,
   OptionGroup,
