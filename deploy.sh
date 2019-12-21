@@ -39,5 +39,21 @@ elif [ "$1" = "build" ]
       # cd -
     echo ""
 else
-  echo '...'
+  cd ./dist
+
+  echo ""
+  echo "\033[33m 开始部署... \033[0m"
+  echo ""
+
+  git init
+  git config user.name "听着情歌流泪"
+  git config user.email "develop@lingtal.com"
+  git add -A
+  git commit -m "🌴 🍋 —— $(date +%F) $(date +%H:%M:%S)"
+  git push -f https://github.com/speiyouFE/xbk-docs.git master:gh-pages
+  echo ""
+  echo "\033[32m ✔ 部署完成... \033[0m"
+  cd ../
+    # cd -
+  echo ""
 fi

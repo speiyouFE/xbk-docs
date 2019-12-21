@@ -204,6 +204,7 @@ function getRtcSiderBar(groupTitle) {
         'media/setPlayerMute',
         'media/pullAudioFlow',
         'media/playDestroy',
+        'media/playDestroyByID',
         'media/getLocateVideo',
         'media/getVideoUrl'
       ]
