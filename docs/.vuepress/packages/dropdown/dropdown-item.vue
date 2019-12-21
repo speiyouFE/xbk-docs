@@ -15,7 +15,7 @@
 </template>
 <script>
 import Emitter from '../mixins/emitter'
-import ScIcon from '../icon'
+import ScIcon from './icon'
 export default {
   name: 'ScDropdownItem',
   components: { ScIcon },
