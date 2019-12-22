@@ -1,4 +1,4 @@
-name: Deploy xbk-docs
+name: Deploy
 on:
   push:
     branches:
@@ -9,11 +9,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-
+        - run: npm ci
+        - run: npm install
+        - run: npm run build
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@master
         env:
           ACCESS_TOKEN: ${{ secrets.XBK_DOCS_DEPLOY }}
           BRANCH: gh-pages
-          FOLDER: dist
-          BUILD_SCRIPT: npm install && npm run build
+          PUBLISH_DIR: dist
