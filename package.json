@@ -21,6 +21,7 @@
   "keywords": [
     "SealUI"
   ],
+  "sideEffects": false,
   "homepage": "http://xbk-docs.sealui.com",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.2.0",
@@ -51,6 +52,7 @@
     "not ie <= 8"
   ],
   "dependencies": {
+    "qr.js": "^0.0.0",
     "qrious": "^4.0.2",
     "resize-observer-polyfill": "^1.5.1",
     "throttle-debounce": "^2.1.0"

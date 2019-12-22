@@ -8,7 +8,7 @@
 
 ```html
 <template>
-  <sc-countdown :time="time" />
+  <sc-countdown :time="10800" />
 </template>
 
 <script>
@@ -30,8 +30,18 @@
 
 ```html
 <template>
-  <sc-countdown :time="time" format="DD 天 HH 时 mm 分 ss 秒" />
+  <sc-countdown :time="10800" format="DD 天 HH 时 mm 分 ss 秒" />
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        time: 5000
+      }
+    }
+  }
+</script>
 ```
 
 :::
@@ -42,7 +52,7 @@
 
 ```html
 <template>
-  <sc-countdown :time="time" format="DD 天 HH 时 mm 分 ss 秒">
+  <sc-countdown :time="10800" format="DD 天 HH 时 mm 分 ss 秒">
     <template v-slot="data">
       <span class="item">{{ data.hours }}</span>
       <span class="item">{{ data.minutes }}</span>
@@ -50,6 +60,15 @@
     </template>
   </sc-countdown>
 </template>
+<script>
+  export default {
+    data() {
+      return {
+        time: 5000
+      }
+    }
+  }
+</script>
 ```
 
 :::
@@ -98,15 +117,15 @@
 
 ### Format 格式
 
-| 格式 | 说明 |
-| ---- | ---- |
-| DD   | 天数 |
-| HH   | 小时 |
-| mm   | 分钟 |
-| ss   | 秒数 |
+| 格式 | 说明         |
+| ---- | ------------ |
+| DD   | 天数         |
+| HH   | 小时         |
+| mm   | 分钟         |
+| ss   | 秒数         |
 | S    | 毫秒(一位数) |
-| SS    | 毫秒(两位数) |
-| SSS    | 毫秒(三位数) |
+| SS   | 毫秒(两位数) |
+| SSS  | 毫秒(三位数) |
 
 ### Events
 
@@ -130,11 +149,6 @@
 
 <script>
   export default {
-    data() {
-      return {
-        time: 30 * 60 * 60 * 1000
-      }
-    },
     methods: {
       start() {
         this.$refs.countDown.start()
@@ -146,7 +160,7 @@
         this.$refs.countDown.reset()
       },
       finish() {
-        this.$toast('倒计时结束')
+        this.$toast.success('倒计时结束')
       },
       finished(){
 

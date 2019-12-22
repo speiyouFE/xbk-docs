@@ -3,9 +3,7 @@ export default {
     return {}
   },
   computed: {},
-  created() {
-    console.log(1)
-  },
+  created() {},
   mounted() {},
   beforeDestroy() {},
   destroyed() {},
