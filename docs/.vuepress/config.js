@@ -140,7 +140,7 @@ function getUiSiderBar(groupTitle) {
       title: '插件',
       collapsable: false,
       sidebarDepth: 0,
-      children: ['plugins/oss']
+      children: ['plugins/request', 'plugins/oss', 'plugins/audio', 'plugins/logger', 'plugins/putLogs', 'plugins/messageCenter']
     }
   ]
 }
