@@ -10,5 +10,5 @@ actionText3: UC
 actionLink3: /uc/
 actionText4: UI库
 actionLink4: /ui/quickstart
-tagline: 学而思小班课 JSSDK 文档
+tagline: 小班课前端文档
 ---

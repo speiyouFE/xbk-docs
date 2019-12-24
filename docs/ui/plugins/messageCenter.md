@@ -10,14 +10,15 @@ this.$messageCenter.open(url, liveClassId)
 
 ### 关闭连接
 
-````js
+```js
 this.$messageCenter.close()
+```
 
 ### 监听消息
 
 ```js
 this.$messageCenter.bind(listener)
-````
+```
 
 ### 卸载监听
 
