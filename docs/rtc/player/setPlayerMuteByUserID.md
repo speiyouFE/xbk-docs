@@ -1,15 +1,15 @@
-# 播放器静音
+# 播放器静音(userID)
 
 设置指定用户是否静音
 
 ## API 接口
 
-### `this.$rtcApi.setPlayerMute(userID, isMute)`
+### `this.$rtcApi.setPlayerMuteByUserID(userID, isMute)`
 
 ## 示例代码
 
 ```js
-this.$rtcApi.setPlayerMute(123, true).then(() => {
+this.$rtcApi.setPlayerMuteByUserID(123, true).then(() => {
   // ...
 })
 ```

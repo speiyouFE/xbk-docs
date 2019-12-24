@@ -8,12 +8,12 @@
 
 ## API 接口
 
-### `this.$rtcApi.destroyPlayerByID(playerID)`
+### `this.$rtcApi.destroyPlayerByPlayerID(playerID)`
 
 ## 示例代码
 
 ```js
-this.$rtcApi.destroyPlayerByID(123)
+this.$rtcApi.destroyPlayerByPlayerID(123)
 ```
 
 ## 参数
@@ -21,5 +21,9 @@ this.$rtcApi.destroyPlayerByID(123)
 | 参数     | 说明               | 类型   | 可选值 | 默认值 |
 | -------- | ------------------ | ------ | ------ | ------ |
 | playerID | 播放器 id （必选） | number | —      | —      |
+
+:::info
+`playerID: string` 必选，播放器 id，从 [initPullFlow](initPullFlow.html) 的返回值中获取
+:::
 
 [[toc]]

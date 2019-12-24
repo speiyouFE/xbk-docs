@@ -8,12 +8,12 @@
 
 ## API 接口
 
-### `this.$rtcApi.destroyPlayer(userID)`
+### `this.$rtcApi.destroyPlayerByUserID(userID)`
 
 ## 示例代码
 
 ```js
-this.$rtcApi.destroyPlayer(123).then(() => {
+this.$rtcApi.destroyPlayerByUserID(123).then(() => {
   // ...
 })
 ```

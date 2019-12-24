@@ -205,26 +205,25 @@ function getRtcSiderBar(groupTitle) {
         'media/stopPushFlow',
         'media/initPullFlow',
         'media/stopPullFlow',
+        'media/startPullFlow',
         'media/stopAllPullFlow',
         'media/changePullFlow',
-        'media/startPullFlow',
-        'media/setAppMute',
-        'media/setAppVolume',
-        'media/getAppVolume',
-        'media/setPlayerMute',
-        'media/pullAudioOnly',
         'media/pullAudioFlow',
-        'media/playDestroy',
-        'media/playDestroyByID',
         'media/getLocateVideo',
         'media/getVideoUrl'
       ]
     },
     {
+      title: '播放器',
+      collapsable: false,
+      sidebarDepth: 0,
+      children: ['player/setPlayerMuteByUserID', 'player/setPlayerMuteByPlayerID', 'player/destroyPlayerByUserID', 'player/destroyPlayerByPlayerID']
+    },
+    {
       title: '其他',
       collapsable: false,
       sidebarDepth: 0,
-      children: ['getStreamInfo', 'logger']
+      children: ['getStreamInfo', 'setAppMute', 'setAppVolume', 'getAppVolume', 'logger']
     }
   ]
 }
