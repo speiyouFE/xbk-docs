@@ -1,4 +1,4 @@
-# 设置扬声器音量
+# 设置扬声器音量 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 设置默认扬声器音量
 

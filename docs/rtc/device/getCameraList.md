@@ -1,4 +1,4 @@
-# 获取摄像头列表
+# 获取摄像头列表 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 获取当前电脑上的摄像头列表
 

@@ -1,4 +1,4 @@
-# 设置摄像头参数
+# 设置摄像头参数 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 设置当前电脑上摄像头参数
 
@@ -9,7 +9,9 @@
 ## 示例代码
 
 ```js
-this.$rtcApi.setCameraParams(800, 600, 15)
+this.$rtcApi.setCameraParams(800, 600, 15).then(() => {
+  // ...
+})
 ```
 
 ## 参数

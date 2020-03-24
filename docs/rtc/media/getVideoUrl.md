@@ -1,4 +1,4 @@
-# 获取视频地址
+# 获取视频地址 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 获取视频地址
 

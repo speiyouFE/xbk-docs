@@ -1,4 +1,4 @@
-# 获取本地预览视频
+# 获取本地预览视频 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 获取本地预览视频
 

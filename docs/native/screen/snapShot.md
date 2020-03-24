@@ -1,4 +1,4 @@
-# 播放器截图
+# 播放器截图 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 播放器截图
 

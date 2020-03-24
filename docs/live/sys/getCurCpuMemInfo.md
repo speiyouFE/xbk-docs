@@ -1,4 +1,4 @@
-# 获取内存和 cpu 信息
+# 获取内存和 cpu 信息 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 获取当前 cpu 内存信息
 

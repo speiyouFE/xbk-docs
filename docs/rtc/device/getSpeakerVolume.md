@@ -1,4 +1,4 @@
-# 获取扬声器音量
+# 获取扬声器音量 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 获取系统扬声器音量
 

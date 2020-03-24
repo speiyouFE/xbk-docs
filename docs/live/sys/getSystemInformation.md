@@ -1,4 +1,4 @@
-# 获取系统信息
+# 获取系统信息 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 获取当前系统的信息
 

@@ -1,4 +1,4 @@
-# 开始推流
+# 开始推流 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 开始推流,本地摄像头拍摄的视频数据开始向远端发送
 

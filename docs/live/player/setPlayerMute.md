@@ -1,4 +1,4 @@
-# 播放器静音
+# 播放器静音 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 设置指定 widgetID 的播放器是否静音
 

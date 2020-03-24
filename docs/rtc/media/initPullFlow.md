@@ -1,4 +1,4 @@
-# 初始化拉流
+# 初始化拉流 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 初始化拉流
 

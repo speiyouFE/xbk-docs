@@ -1,4 +1,4 @@
-# 恢复拉流
+# 恢复拉流 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 恢复拉流
 

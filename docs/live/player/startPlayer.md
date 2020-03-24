@@ -1,4 +1,4 @@
-# 开始播放
+# 开始播放 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 开始播放指定 widgetID 的视频
 

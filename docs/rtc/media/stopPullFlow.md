@@ -1,4 +1,4 @@
-# 停止拉流
+# 停止拉流 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 停止拉取某个用户的视频流
 

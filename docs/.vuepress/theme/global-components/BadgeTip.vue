@@ -30,14 +30,14 @@ export default {
 <style lang="stylus" scoped>
 .sealui-badge
   display inline-block
-  font-size .85rem
-  height 1rem
-  line-height 1rem
+  font-size .65rem
+  height 1.2rem
+  line-height 1.2rem
   border-radius .15rem
   padding 0 .3rem
   color white
   background-color #8c99a5
-  &.is-tip,
+  &.is-tip
     background-color #8c99a5
   &.is-green
     background-color #09bb07

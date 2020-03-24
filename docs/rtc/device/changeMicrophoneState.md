@@ -1,4 +1,4 @@
-# 开关麦克风
+# 开关麦克风 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 打开或关闭麦克风
 

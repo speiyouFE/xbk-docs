@@ -1,4 +1,4 @@
-# 设置扬声器
+# 设置扬声器 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 设置默认扬声器
 

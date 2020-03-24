@@ -1,4 +1,4 @@
-# 设置麦克风
+# 设置麦克风 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 设置默认麦克风
 

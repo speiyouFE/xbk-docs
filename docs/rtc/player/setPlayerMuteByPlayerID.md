@@ -1,4 +1,4 @@
-# 播放器静音(playerID)
+# 播放器静音(playerID) <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 设置指定播放器是否静音
 

@@ -1,4 +1,4 @@
-# 销毁播放器
+# 销毁播放器 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 销毁播放器指定 widgetID 的播放器
 

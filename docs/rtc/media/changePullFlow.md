@@ -1,5 +1,5 @@
-# 切换视频来源
-
+# 切换视频来源 (暂时废弃) <BadgeTip text="异步接口" type="green"></BadgeTip>
+ 
 切换视频来源
 
 ## API 接口

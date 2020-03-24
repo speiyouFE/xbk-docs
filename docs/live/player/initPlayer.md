@@ -1,6 +1,6 @@
-# 初始化
+# 初始化播放器 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
-初始化播放器
+初始化直播播放器
 
 ## API 接口
 

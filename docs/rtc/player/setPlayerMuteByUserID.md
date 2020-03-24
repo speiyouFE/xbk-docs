@@ -1,4 +1,4 @@
-# 播放器静音(userID)
+# 播放器静音(userID) <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 设置指定用户是否静音
 

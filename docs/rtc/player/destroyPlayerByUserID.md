@@ -1,4 +1,4 @@
-# 销毁播放器(userID)
+# 销毁播放器(userID) <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 销毁播放器
 

@@ -1,4 +1,4 @@
-# 拉取音频流
+# 拉取音频流 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 通过 userID 控制是否只拉取音频流
 

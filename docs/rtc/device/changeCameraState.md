@@ -1,4 +1,4 @@
-# 开关摄像头
+# 开关摄像头 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 打开或关闭摄像头
 

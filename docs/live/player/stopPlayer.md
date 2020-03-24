@@ -1,4 +1,4 @@
-# 停止播放
+# 停止播放 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 停止播放指定 widgetID 的视频
 

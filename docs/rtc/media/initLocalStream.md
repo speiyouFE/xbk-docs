@@ -1,4 +1,4 @@
-# 初始化本地视频
+# 初始化本地视频 <BadgeTip text="异步接口" type="green"></BadgeTip>
 
 初始化本地视频
 
