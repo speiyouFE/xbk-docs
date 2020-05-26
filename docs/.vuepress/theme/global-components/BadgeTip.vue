@@ -43,11 +43,13 @@ export default {
     background-color #09bb07
   &.is-error,
   &.is-danger
-    background-color #ed4014 //#f66
+    background-color #ed4014
   &.is-warning,
   &.is-warn,
   &.is-yellow
-    background-color darken(#ed4014, 35%)
+    background-color #fdbe01
+  &.is-blue
+    background-color #1499f8
   & + &
     margin-left .3rem
 </style>
