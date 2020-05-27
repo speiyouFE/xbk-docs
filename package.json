@@ -1,6 +1,6 @@
 {
   "name": "xbk-docs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "小班课前端开发文档",
   "scripts": {
     "docs:dev": "vuepress dev docs",
