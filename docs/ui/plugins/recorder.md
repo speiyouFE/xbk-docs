@@ -4,11 +4,15 @@ Html5 JS 录音 mp3 wav 格式，支持 pc 和 Android、ios 部分浏览器
 
 ## 安装
 
+### NPM
+
 ```sh
 npm install @neosjs/h5-recorder -S
+```
 
-# 或者
+### YARN
 
+```sh
 yarn add @neosjs/h5-recorder
 ```
 
