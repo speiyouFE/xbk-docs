@@ -12,11 +12,14 @@ npm install @neosjs/h5-recorder -S
 yarn add @neosjs/h5-recorder
 ```
 
+> 当前版本 1.0.4
+
 ## API 接口
 
 - `Recorder.init(object)`
 - `Recorder.startRecord()`
 - `Recorder.stopRecord()`
+- `Recorder.closeRecord()` <BadgeTip text="v1.0.4及以上版本 新增此接口" type="green"></BadgeTip>
 - `Recorder.getRecordBlob()`
 - `Recorder.pauseRecord()` <BadgeTip text="v1.0.1及以上版本 新增此接口" type="green"></BadgeTip>
 - `Recorder.resumeRecord()` <BadgeTip text="v1.0.1及以上版本 新增此接口" type="green"></BadgeTip>
@@ -119,6 +122,18 @@ const res = await Recorder.stopRecord()
 | success | 成功的回调 | function | 否       | -      |
 | fail    | 失败的回调 | function | 否       | -      |
 
+### 关闭录音 <BadgeTip text="异步接口" type="blue"></BadgeTip> <BadgeTip text="v1.0.4及以上版本 新增此接口" type="green"></BadgeTip>
+
+```js
+import Recorder from '@neosjs/h5-recorder'
+
+Recorder.closeRecord()
+```
+
+:::danger
+不需要录音的时候，必须调用此接口，关闭录音，释放资源！
+:::
+
 ### 播放录音 <BadgeTip text="异步接口" type="blue"></BadgeTip>
 
 ```js
@@ -205,5 +220,14 @@ Recorder.uploadRecord(url, method, callback)
 | url      | 后端地址 | string   | 是       | -      |
 | method   | 方法     | string   | 否       | post   |
 | callback | 回调方法 | function | 否       | -      |
+
+### 获取浏览器是否支持录音 <BadgeTip text="同步接口" type="warn"></BadgeTip>
+
+```js
+import Recorder from '@neosjs/h5-recorder'
+
+Recorder.isSupport()
+// 接口返回 true、false
+```
 
 [[toc]]
